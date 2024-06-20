@@ -1,0 +1,103 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family:sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+}
+.container{
+    height: 500px;
+    width: 650px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+}
+#id{
+    height: 150px;
+    width: 150px;
+    margin: 0px auto;
+    background-image:url("./pictures/Susan.jpg");
+    background-size: cover;
+    border-radius: 100px;
+    box-shadow: 6px -6px 3px rgb(83, 166, 209);
+}
+.content p{
+    height: 75px;
+}
+.info *, .content p{
+    margin: 10px 0px;
+    text-align: center;
+}
+h2{
+    font-size: 30px
+}
+h3{
+    font-size: 20px;
+    color:steelblue;
+    font-weight: 500;
+    font-family: monospace;
+}
+.content p{
+    margin: 30px 0px;
+    letter-spacing: 2px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.footer .next-prev{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: center;
+}
+.btn{
+    font-size: 35px;
+    font-weight: 700;
+    padding: 0px 10px;
+    color: rgba(0, 0, 255, 0.5);
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.footer .submit{
+    align-self: center;
+    padding: 5px 10px;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media (max-width:426px) {
+    h1{
+        transform: scale(0.8);
+    }
+    .container{
+        transform: scale(0.6);
+    }
+}
+@media (max-width:376px) {
+   html,body{
+    width:fit-content;
+   }
+    .container{
+        row-gap: 30px;
+        box-shadow: none;
+        padding: 0px 100px;
+        transform: scale(1);
+    }h1{
+        transform: scale(1);
+    }
+}
